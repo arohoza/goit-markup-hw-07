@@ -1,0 +1,55 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 528px;
+    border-radius: 4px;
+
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    background-color: $white;
+
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform $transition-duration $transition-timing-function;
+}
+
+.btn-modal-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+
+    padding: 0;
+    margin: 0;
+
+    background-color: $white;
+    border: 1px solid #0000001a;
+    border-radius: 50%;
+
+    transition: color $transition-duration $transition-timing-function;
+
+    &__icon {
+            height: 18px;
+            width: 18px;
+            fill: currentColor;
+
+        &:hover,
+        &:focus {
+                color: $accent-color;
+        }
+    }  
+}
+
+
+
+

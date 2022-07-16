@@ -1,0 +1,17 @@
+.logo {
+    color: $accent-color;
+    font-family: $heading-font-family;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+    text-decoration: none;
+
+    &__accent {
+            color: $titles-text-color;
+
+            &--inverse {
+                    color: $white;
+                }
+        }
+}
+

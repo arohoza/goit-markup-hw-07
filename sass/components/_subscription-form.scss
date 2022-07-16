@@ -1,0 +1,65 @@
+
+
+.subscription-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    &__input {
+        width: 358px;
+        height: 50px;
+        font-size: 16px;
+        line-height: 1.25;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 16px;
+
+
+        border: 1px solid #ffffff4d;
+        box-shadow: 0px 4px 4px 0px $shadow-color;
+        border-radius: 4px;
+        background-color: $regular-text-color;
+        margin-right: 12px;
+
+        color: $regular-text-color;
+
+
+        transition: border $transition-duration $transition-timing-function;
+
+        &:focus-within {
+                border: 1px solid $white;
+                outline: transparent;
+        }
+    }
+
+
+    .subscription-form__button {
+        
+       padding-left: 48px;
+       padding-right:28px;
+
+        
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.875;
+        
+            display: flex;
+            align-items: center;
+            text-align: center;
+            
+            
+        transition: box-shadow $transition-duration $transition-timing-function;
+
+        &:hover,
+        &:focus {
+            box-shadow: 0px 4px 4px 0px $shadow-color;
+
+            &-text {
+                font-size:16px;
+                font-weight:700;
+                line-height:1.875;
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+
+.hero-section {
+    background-color: footer-background-color;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin: 0 auto;
+    height: 636px;
+    max-width: 1600px;
+
+
+    background-image: linear-gradient(to right,
+            $background-gradient-color,
+            $background-gradient-color),
+        url(../images/background-main.jpg);
+    background-position: center;
+
+    &__title {
+            color: $white;
+            font-size: 44px;
+            font-weight: 900;
+            line-height: 1.36;
+            max-width: 696px;
+            margin: 0 auto 32px;
+            letter-spacing: 0.06em;
+        }
+}
+
+
+
+
+
+.btn--hero:hover,
+.btn--hero:focus {
+    border:1px solid transparent;
+    background-color: $button-secondary-color;
+    color: $titles-text-color;
+}

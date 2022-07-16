@@ -1,0 +1,79 @@
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer {
+    background-color: $footer-background-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__logo {
+        display: block;
+        margin-bottom: 20px;
+        margin-right: auto;
+        padding: 0;
+    }
+
+   
+        
+    
+        &__address-item:not(:last-child) {
+            margin-bottom: 9px;
+        }
+    
+       
+    
+        &__address-link {
+            
+            line-height: 1.46;
+            color: $white;
+            font-style: normal;
+            display: block;
+            opacity: 60%;
+    
+            transition: color $transition-duration $transition-timing-function;
+
+            &:focus,
+            &:hover {
+                    color: $accent-color;
+            }
+            
+            &--inverse {
+                color: $white;
+                font-style: normal;
+                opacity: 1;
+            }
+        }
+    
+    
+        
+    
+    
+        &__socials {
+            margin-left:70px;
+            margin-right: 93px;
+
+            &-title {
+                    margin-bottom: 20px;
+                    font-weight: 700;
+                    line-height: 1.14;
+                    color: $white;
+            
+                }
+    
+        }
+    
+        
+    
+        &__subscription-form-title {
+            margin-bottom: 20px;
+            font-weight: 700;
+            line-height: 1.14;
+            text-transform: uppercase;
+            color: $white;
+    
+        }
+
+}
+

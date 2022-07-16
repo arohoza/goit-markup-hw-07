@@ -1,0 +1,112 @@
+.header {
+    border-bottom: 1px solid $header-border-bottom;
+
+    &__logo {
+            margin-right: 97px;
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.page-nav {
+    display: flex;
+
+    &__list {
+            display: flex;
+    
+    }
+
+
+    &__item {
+    position: relative;
+    margin-right: 52px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+        &:last-child {
+            margin-right: 70px;
+            }
+    }
+
+
+    &__link {
+    display: block;
+    color: $titles-text-color;
+    font-size: $base-font-size;
+    font-weight: 500;
+    line-height: 1.14;
+    text-decoration: none;
+
+    transition: color $transition-duration $transition-timing-function;
+
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+
+        &--current {
+            color: $accent-color;
+            
+            &::after {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    content: '';
+                    width: 100%;
+                    height: 4px;
+                    background-color:$accent-color;
+                    border-radius: 2px;
+            
+            }
+        }
+    }
+}
+
+
+.contacts-list {
+    display: flex;
+    margin-left: auto;
+
+    &__item {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    
+        &:not(:last-child) {
+            margin-right: 50px;
+            }
+        }
+
+    &__link {
+        color: $regular-text-color;
+        opacity: 1;
+        margin: auto;
+        font: inherit;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.14;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row-reverse;
+
+        transition: color $transition-duration $transition-timing-function;
+        
+            &:hover,
+            &:focus {
+                color: $accent-color;
+                fill: $accent-color;
+                }
+        }
+
+    &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+    }
+}
