@@ -33,7 +33,6 @@
     }
 
     &__description {
-        color: $regular-text-color;
         font-size: $base-font-size;
         line-height: 1.7;
     }
@@ -41,23 +40,3 @@
 
 
 
-
-
-
-
-
-
-.features-title {
-    color: $titles-text-color;
-    font-size: $base-font-size;
-    font-weight: 700;
-    line-height: 1.17;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-.features-list__description {
-    color: $regular-text-color;
-    font-size: $base-font-size;
-    line-height: 1.7;
-}
