@@ -25,13 +25,15 @@
        
     
         &__address-link {
-            
-            line-height: 1.46;
+            width:231px;
+
+            line-height: 1.71;
             color: $white;
             font-style: normal;
             display: block;
             opacity: 60%;
-    
+        
+
             transition: color $transition-duration $transition-timing-function;
 
             &:focus,

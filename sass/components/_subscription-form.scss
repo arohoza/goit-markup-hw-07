@@ -19,7 +19,7 @@
         border: 1px solid #ffffff4d;
         box-shadow: 0px 4px 4px 0px $shadow-color;
         border-radius: 4px;
-        background-color: $regular-text-color;
+        background-color: $footer-background-color;
         margin-right: 12px;
 
         color: $regular-text-color;
@@ -36,17 +36,17 @@
 
     .subscription-form__button {
         
-       padding-left: 48px;
-       padding-right:28px;
-
+    display: flex;
+        justify-content: center;
+        align-items: center;
         
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 1.875;
-        
-            display: flex;
-            align-items: center;
-            text-align: center;
+        padding-left:48px;
+        padding-right:28px;
+        border-radius: 4px;
+        color: $white;
+        box-shadow: 0px 4px 4px $shadow-color;
+        cursor: pointer;
+        border: none;
             
             
         transition: box-shadow $transition-duration $transition-timing-function;
