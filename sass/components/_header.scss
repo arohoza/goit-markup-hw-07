@@ -95,6 +95,7 @@
         text-decoration: none;
         display: flex;
         flex-direction: row-reverse;
+        align-items: flex-start;
 
         transition: color $transition-duration $transition-timing-function;
         
